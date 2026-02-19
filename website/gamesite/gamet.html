@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>!DOTS!</title>
+  <script src="/player/ruffle/ruffle.js"></script>
+  <link rel="stylesheet" href="../cwf.css">
+</head>
+<body>
+  <div id="game-container" class="gbox"></div>
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", () => {
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      const container = document.getElementById("game-container");
+      container.appendChild(player);
+      player.ruffle().load("/games/dots.swf");
+    });
+  </script>  
+  <div class="ginfo"> 
+    <p>  !DOTS! is a game where you need to grab all the red balls so you can get the most points, the purple are bad and yellow gives special powers.</p>
+  </div>
+  <noscript>
+     <p> DTOX need javascript to run games, please enable JavaScript in your browser!</p>
+</noscript>
+</body>
+</html>

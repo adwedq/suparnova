@@ -1,0 +1,71 @@
+body { 
+    margin: 0; 
+    background-image: url('../assests/nnstar.jpg');
+    background-size: 100px 100px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+   font-family: arial ;
+   color: white; 
+   font-size: large;
+}
+.main {  
+border: 2px solid crimson;  
+background-color: black;  
+margin-left: 250px; 
+margin-right: 250px; 
+align-items: center; 
+text-align: center;
+ color: crimson;
+}   
+
+.anv { 
+    border: red solid 2px; 
+    margin-left: 200px; 
+    margin-right: 200px; 
+    align-items: center; 
+    margin: 0;
+} 
+.anv img { 
+    width: 150px; 
+    height: 150px;
+} 
+
+.anv button { 
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+} 
+.gbox { 
+    border: 5px solid crimson; 
+    margin: -20px auto 0 auto; 
+    align-items: center; 
+    max-width: fit-content; 
+    max-height: fit-content; 
+    margin-top: 20px;
+}
+.gms { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}.gms h1 { 
+    flex-basis: 100%; 
+    text-align: center; 
+    margin-bottom: 10px;
+}
+.gms img { 
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain; 
+    border: none;  
+    margin: 0;
+} 
+
+.ginfo { 
+    border: 5px solid crimson; 
+    margin: 0;
+    margin-left: 360px; 
+    margin-right: 360px;
+
+}
+
+
