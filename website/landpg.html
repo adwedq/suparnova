@@ -3,28 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SWF games</title>
-    <link rel="stylesheet" href="cwf.css">
+    <title>YKNO</title>
+    <link rel="stylesheet" href="cwf.css"> 
+   
 </head>
-<body>
-    <div class=" main"> 
-        <img src="../assests/FNL.png" alt="SWF games" style="width: 450px; height: 250px;">
-        <div class="anv"> 
-           <button onclick="window.location.href='landpg.html'"><img src="../assests/hv.png" alt="home"></button>
-            <button><img src="../assests/f-v.png" alt="flash"></button>
-            <button><img src="../assests/sh-v.png" alt="shockwave"></button> 
-            <button onclick="window.location.href='tstst.html'"><img src="../assests/ot-v.png" alt="other"></button>
-        </div> 
-        <div class="gms"> 
-            <h1 style=" text-align: center;"> POPULAR GAMES</h1> 
-            <button onclick="window.location.href='gamesite/gamet.html'"><img src="../assests/gm-logo/dots-logo.png" alt="dots"></button> <button onclick="window.location.href='gamesite/gamet2.html'"><img src="../assests/gm-logo/helicpoter-logo.jpg" alt="helicopter"></button><button onclick="window.location.href='gamesite/gamet3.html'"><img src="../assests/gm-logo/portal-logo.png" alt="portal"></button><button onclick="window.location.href='gamesite/gamet4.html'"><img src="../assests/gm-logo/tiq-logo.png" alt="impossible quiz"></button>
+<body> 
+    
+    <div class="main">  
+        <div class="top"> 
+         <img src="../assests/FNL.png" alt="YKNO logo" style="width: 60%; height: 60%;"> <input type="text" placeholder="this is not working rn.." > <button type="submit" style="box-shadow: 2px 2px 0px #000,inset 0px 1px 0px rgba(255,255,255,0.3), inset 0px -1px 0px rgba(0,0,0,0.3);">(can't)Search</button> 
         </div>
+        <div class="anv" id="nav"> 
+          <button class="hov1" onclick="window.location.href='landpg.html'" style="background: linear-gradient(to bottom, #DA70D6, #9932CC)">HOME</button>
+          <button class="hov2" onclick="window.location.href='flash.html'">FLASH!</button>
+          <button class="hov3" onclick="window.location.href='workit.html'">ANIMATION</button>
+          <button class="hov4" onclick="window.location.href='workit.html'"> SHOCKWAVE</button>
+          <button class="hov5"  onclick="cambiarBotones()">MORE..</button>
+        </div>   
+        <div class="sida"> 
+         <img src="../assests/wkee.png" alt="stuff of a week" style="width: 300px; height: 80%; margin-bottom: 10px;">   
+         <ul style=" color: white; font-size: 12px; margin-bottom: 50px; text-align: left; display: flex;  flex-direction: column; margin-right: 100px;"> 
+             <li> but we got flash games!</li> 
+             <br>
+             <li>most of the stuff is under construction</li> 
+             <br>
+             <li> just posted the website</li> 
+
+        </div>
+        <h1 style=" color: black; text-align: center; margin-right: 500px;"> POPULAR GAMES</h1>
+        <div class="gms"> 
+            <button onclick="window.location.href='gamesite/gamet.html'"><img src="../assests/gm-logo/dots-logo.png" alt="dots"></button> 
+            <button onclick="window.location.href='gamesite/gamet2.html'"><img src="../assests/gm-logo/helicpoter-logo.jpg" alt="helicopter"></button>
+            <button onclick="window.location.href='gamesite/gamet3.html'"><img src="../assests/gm-logo/portal-logo.png" alt="portal"></button>
+            <button onclick="window.location.href='gamesite/gamet4.html'"><img src="../assests/gm-logo/tiq-logo.png" alt="impossible quiz"></button> 
+        </div> 
+        <div class="lon"> 
+       <div class="work"> 
+			<img src="../assests/10.gif" alt="under construction" style="display: block; margin: 0 auto; align-items: center;">  
+			    <button popovertarget="mi-pop" style="display: block; margin: 0 auto; align-items: center; background: transparent;"><img src="../assests/conh.png" alt="workman" ></button>
+        <div id="mi-pop" popover style="background:yellow; color:black; padding:10px; border:2px solid black; margin-right: 30px;">
+            <H1> FAQ</H1> 
+			<details> 
+				<summary> why is this site under construction?</summary>
+				<p> cause i am too lazy to finish this site</p> 
+			</details> 
+			<details>  
+				<summary> What is this?</summary> 
+				<p> none of your business</p>
+			</details>  
+			<details> 
+				<summary>when will this finish?</summary> 
+				<p> one day, but not today</p>
+			</details>
+        </div> 
+		 </div> 
     </div>
+    </div> 
     <div class="btm" style="text-align: center; margin-top: 20px;"> 
         <a href="https://en.wikipedia.org/wiki/Smiley"><img src="../assests/smile81.gif" alt="smile" style="border: none;"></a>
         <a href="https://helpx.adobe.com/enterprise/kb/eol-adobe-flash-shockwave-player.html"><img src="../assests/shockwave81.gif" alt="shockwave" style="border: none;"></a>
         <a href="https://money.com/"><img src="../assests/moneyscam81.gif" alt="moneyscam" style="border: none;"></a>
         <a href="https://support.microsoft.com/en-us/windows/internet-explorer-downloads-d49e1f0d-571c-9a7b-d97e-be248806ca70#id0ebbd=windows_7"><img src="../assests/ie81.gif" alt="ie" style="border: none;"></a> 
-    </div>
+    </div> 
+    <button popovertarget="mi-pop">Mostrar popover</button>
+        <div id="mi-pop" popover style="background:#333; color:#eee; padding:10px; border:2px solid #ff6600;">
+            ¡Soy un popover! Sin JavaScript.
+        </div> 
+       <script>
+const paginas1 = [
+    { texto: "HOME", url: "landpg.html", clase: "hov1" },
+    { texto: "FLASH!", url: "flash.html", clase: "hov2" },
+    { texto: "ANIMATION", url: "ani.html", clase: "hov3" },
+    { texto: "SHOCKWAVE", url: "workit.html", clase: "hov4" },
+    { texto: "MORE..", accion: "cambiar", clase: "hov5" }
+];
+
+const paginas2 = [
+    { texto: "EXCLUSIVE", url: "workit.html", clase: "hov1" },
+    { texto: "$TORE", url: "workit.html", clase: "hov4" },
+    { texto: "CHAT!", url: "workit.html", clase: "hov3" },
+    { texto: "JAVA₻", url: "workit.html", clase: "hov2" },
+    { texto: "BACK..", accion: "cambiar", clase: "hov5" }
+];
+
+let paginaActual = 1;
+
+function cambiarBotones() {
+    const nav = document.getElementById('nav');
+    const paginas = paginaActual === 1 ? paginas2 : paginas1;
+    paginaActual = paginaActual === 1 ? 2 : 1;
+    nav.innerHTML = '';
+    paginas.forEach(p => {
+        const btn = document.createElement('button');
+        btn.textContent = p.texto;
+        if (p.accion === 'cambiar') {
+            btn.onclick = cambiarBotones;
+        } else {
+            btn.onclick = () => window.location.href = p.url;
+        }
+        nav.appendChild(btn); 
+        btn.className = p.clase;
+    });
+}
+</script>
 </body>
 </html>
