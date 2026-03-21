@@ -3,26 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Juego Dots con Ruffle</title>
-  <script src="/player/ruffle/ruffle.js"></script>
+  <script src="/player/sw/dirplayer-polyfill-0.4.1.js"></script>
   <link rel="stylesheet" href="../cwf.css">
 </head>
 <body>
-  <div id="game-container" class="gbox"></div>
-  <script>
-    window.RufflePlayer = window.RufflePlayer || {};
-    window.addEventListener("load", () => {
-      const ruffle = window.RufflePlayer.newest();
-      const player = ruffle.createPlayer();
-      const container = document.getElementById("game-container");
-      container.appendChild(player);
-      player.ruffle().load("/games/btd5-2014.swf");
-    });
-  </script>  
-    <div class="ginfo">  
-     <p> You are a monkey an you need to pop balloons or you die.</p> 
-     </div>
-  <noscript>
-     <p> DTOX   need javascript to run games, please enable JavaScript in your browser!</p>
-</noscript>
+ <embed src="/games/snowman/snowmen.dcr"  width="640" height="480">
 </body>
-</html>
+</html> 
+

@@ -1,6 +1,6 @@
 body { 
     margin: 0; 
-   background-color: rgb(91, 91, 228);
+   background-color:rgb(191, 191, 191);
    font-family: arial ;
    color: black; 
    font-size: large; 
@@ -18,7 +18,8 @@ background-color: white;
     display: flex;
     width: 100%;
     align-items: flex-end;
-    margin: 0;
+    margin: 0; 
+    padding: 2px 10px;
 } 
 
 .anv button { 
@@ -94,7 +95,8 @@ background-color: white;
         inset 0px 1px 0px rgba(255,255,255,0.3),
         inset 0px -1px 0px rgba(0,0,0,0.3);
     border: 2px solid #000; 
-    align-items: flex-start; 
+    align-items: flex-start;  
+    padding: 2px 10px;
     
 }
 
@@ -108,12 +110,14 @@ background-color: white;
 }
  
 .top { 
-   background-color: rgb(91, 91, 228);  
+   background-color: rgb(91, 91, 228);   
+ margin: 0;
+   display: flex;
+   align-items: center;
+   padding: 10px;
 } 
 
-.top input[type="text"] { 
-   margin-bottom: 20px;
-} 
+
 
 .gbox { 
     border: 5px solid crimson; 
@@ -177,4 +181,56 @@ background-color: white;
     border: solid5px grey; 
     margin-left: 30px; 
     margin-right: 30px;
+} 
+
+.btn {
+  color: #fff;
+  background-color: var(--light-primary);
+  height: 25px;
+  min-width: 75px;
+  cursor: pointer;
+  border-top: solid 1px var(--border-light);
+  border-bottom: solid 1px var(--border-dark);
+  border-left: solid 1px var(--border-light);
+  border-right: solid 1px var(--border-dark);
+  font-weight: lighter;
+  font-family: inherit;
+  font-size: 12px;
+  padding: 0 12px;
+} 
+    .tmain{ 
+           margin-left: 50px; 
+           margin-right: 50px; 
+          border-top: solid 1px var(--border-light);
+  border-bottom: solid 1px var(--border-dark);
+  border-left: solid 1px var(--border-light);
+  border-right: solid 1px var(--border-dark);
+  background-color: var(--light-primary);
+        } 
+        .btn {
+  border-top: solid 1px var(--border-light);
+  border-bottom: solid 1px var(--border-dark);
+  border-left: solid 1px var(--border-light);
+  border-right: solid 1px var(--border-dark);
+  background-color: var(--light-primary);
+  color: var(--text);
+  cursor: pointer;
+  padding: 4px 12px;
+  font-family: inherit;
+  font-size: 12px;
 }
+
+.btn:active {
+  border-top: solid 1px var(--border-dark);
+  border-bottom: solid 1px var(--border-light);
+  border-left: solid 1px var(--border-dark);
+  border-right: solid 1px var(--border-light);
+} 
+:root {
+  --light-primary: #4a5c3a;
+  --border-light: #7a9060;
+  --border-dark: #1e2a14;
+  --text: #d0dbc0;
+} 
+
+

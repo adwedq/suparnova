@@ -10,26 +10,17 @@
 <body> 
     
     <div class="main">  
-        <div class="top"> 
-         <img src="../assests/FNL.png" alt="YKNO logo" style="width: 60%; height: 60%;"> <input type="text" placeholder="this is not working rn.." > <button type="submit" style="box-shadow: 2px 2px 0px #000,inset 0px 1px 0px rgba(255,255,255,0.3), inset 0px -1px 0px rgba(0,0,0,0.3);">(can't)Search</button> 
+        <div class="top">   
+            <img src="../assests/hg.png" alt="halfground logo" style="width: 40%; height: 40%; margin-top: 11px;">
+      <input type="text" placeholder="this is not working rn.."> <button type="submit" style="box-shadow: 2px 2px 0px #000,inset 0px 1px 0px rgba(255,255,255,0.3), inset 0px -1px 0px rgba(0,0,0,0.3);">(can't)Search</button> 
         </div>
         <div class="anv" id="nav"> 
           <button class="hov1" onclick="window.location.href='landpg.html'" style="background: linear-gradient(to bottom, #DA70D6, #9932CC)">HOME</button>
           <button class="hov2" onclick="window.location.href='flash.html'">FLASH!</button>
-          <button class="hov3" onclick="window.location.href='workit.html'">ANIMATION</button>
-          <button class="hov4" onclick="window.location.href='workit.html'"> SHOCKWAVE</button>
-          <button class="hov5"  onclick="cambiarBotones()">MORE..</button>
+          <button class="hov3" onclick="window.location.href='workit.html'">SHOCKWAVE</button>
+          <button class="hov4" onclick="window.location.href='workit.html'"> JAVA</button>
+          <button class="hov5">MORE..</button>
         </div>   
-        <div class="sida"> 
-         <img src="../assests/wkee.png" alt="stuff of a week" style="width: 300px; height: 80%; margin-bottom: 10px;">   
-         <ul style=" color: white; font-size: 12px; margin-bottom: 50px; text-align: left; display: flex;  flex-direction: column; margin-right: 100px;"> 
-             <li> but we got flash games!</li> 
-             <br>
-             <li>most of the stuff is under construction</li> 
-             <br>
-             <li> just posted the website</li> 
-
-        </div>
         <h1 style=" color: black; text-align: center; margin-right: 500px;"> POPULAR GAMES</h1>
         <div class="gms"> 
             <button onclick="window.location.href='gamesite/gamet.html'"><img src="../assests/gm-logo/dots-logo.png" alt="dots"></button> 
@@ -69,42 +60,6 @@
         <div id="mi-pop" popover style="background:#333; color:#eee; padding:10px; border:2px solid #ff6600;">
             ¡Soy un popover! Sin JavaScript.
         </div> 
-       <script>
-const paginas1 = [
-    { texto: "HOME", url: "landpg.html", clase: "hov1" },
-    { texto: "FLASH!", url: "flash.html", clase: "hov2" },
-    { texto: "ANIMATION", url: "ani.html", clase: "hov3" },
-    { texto: "SHOCKWAVE", url: "workit.html", clase: "hov4" },
-    { texto: "MORE..", accion: "cambiar", clase: "hov5" }
-];
 
-const paginas2 = [
-    { texto: "EXCLUSIVE", url: "workit.html", clase: "hov1" },
-    { texto: "$TORE", url: "workit.html", clase: "hov4" },
-    { texto: "CHAT!", url: "workit.html", clase: "hov3" },
-    { texto: "JAVA₻", url: "workit.html", clase: "hov2" },
-    { texto: "BACK..", accion: "cambiar", clase: "hov5" }
-];
-
-let paginaActual = 1;
-
-function cambiarBotones() {
-    const nav = document.getElementById('nav');
-    const paginas = paginaActual === 1 ? paginas2 : paginas1;
-    paginaActual = paginaActual === 1 ? 2 : 1;
-    nav.innerHTML = '';
-    paginas.forEach(p => {
-        const btn = document.createElement('button');
-        btn.textContent = p.texto;
-        if (p.accion === 'cambiar') {
-            btn.onclick = cambiarBotones;
-        } else {
-            btn.onclick = () => window.location.href = p.url;
-        }
-        nav.appendChild(btn); 
-        btn.className = p.clase;
-    });
-}
-</script>
 </body>
 </html>
