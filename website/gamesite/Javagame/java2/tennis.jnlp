@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="http://www.java4K.com/game/anyone4tennis">
+<information>
+  <title>Anyone 4 Tennis?</title>
+  <vendor>Simon Hayles</vendor>
+  <!--homepage href="/" /-->
+  <description>Game</description>
+</information>
+<offline-allowed/>
+<!--security>
+  <j2ee-application-client-permissions/>
+</security-->
+<resources>
+  <j2se version="1.4+" />
+  <jar href="tennis.jar"/>
+</resources>
+<application-desc main-class="S" />
+</jnlp>

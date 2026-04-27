@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>miencraft</title>
+    <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
+  </head>
+  <body style="background-color: #222; display: flex; justify-content: center; padding-top: 50px;">
+
+   <applet code="org.lwjgl.util.applet.AppletLoader" archive="s3.amazonaws.com/MinecraftDownload/classic/lwjgl_util_applet.jar?v=15, s3.amazonaws.com/MinecraftDownload/classic/lzma.jar?v=15" codebase="." width="854" height="480">
+        <param name="al_title" value="Minecraft">
+        <param name="al_main" value="com.mojang.minecraft.MinecraftApplet">
+        <param name="al_logo" value="s3.amazonaws.com/MinecraftDownload/classic/logo_small.png">
+        <param name="al_progressbar" value="s3.amazonaws.com/MinecraftDownload/classic/appletprogress.gif">
+        <param name="al_jars" value="s3.amazonaws.com/MinecraftDownload/classic/lwjgl_applet.jar.pack.lzma,s3.amazonaws.com/MinecraftDownload/classic/lwjgl.jar.pack.lzma, s3.amazonaws.com/MinecraftDownload/classic/jinput.jar.pack.lzma, s3.amazonaws.com/MinecraftDownload/classic/lwjgl_util.jar.pack.lzma, s3.amazonaws.com/MinecraftDownload/classic/minecraft.jar">
+        <param name="al_windows" value="s3.amazonaws.com/MinecraftDownload/classic/windows_natives.jar.lzma">
+        <param name="al_linux" value="s3.amazonaws.com/MinecraftDownload/classic/linux_natives.jar.lzma">
+        <param name="al_mac" value="s3.amazonaws.com/MinecraftDownload/classic/macosx_natives.jar.lzma">
+        <param name="al_solaris" value="s3.amazonaws.com/MinecraftDownload/classic/solaris_natives.jar.lzma">
+        <param name="al_version" value="7.21">
+        <param name="separate_jvm" value="true">
+        <param name="java_arguments" value="-Dsun.java2d.noddraw=true -Dsun.awt.noerasebackground=true -Dsun.java2d.d3d=false -Dsun.java2d.opengl=true -Dsun.java2d.pmoffscreen=false -Xmx800M">
+        <param name="boxmessage" value="Minecraft started">
+        <param name="boxbgcolor" value="#000000">
+        <param name="al_bgcolor" value="000000">
+        <param name="al_fgcolor" value="ffffff">
+        <param name="al_errorcolor" value="ff0000">
+        <param name="al_prepend_host" value="false">
+            </applet>
+
+    <script>
+      cheerpjInit();
+    </script>
+  </body>
+</html>

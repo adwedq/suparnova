@@ -1,0 +1,6 @@
+// 128 x 128
+OFF       UP       http://ad.doubleclick.net/pfadx/sw.nol/racing/twohundredmiles/;gw=racing;sec_0=twohundredmiles;u=|gw-racing|sec_0-twohundredmiles;sz=128x128;
+// 256 x 128
+OFF       UP       http://ad.doubleclick.net/pfadx/sw.nol/racing/twohundredmiles/;gw=racing;sec_0=twohundredmiles;u=|gw-racing|sec_0-twohundredmiles;sz=256x128;
+// 512 x 64
+OFF       UP       http://ad.doubleclick.net/pfadx/sw.nol/racing/twohundredmiles/;gw=racing;sec_0=twohundredmiles;u=|gw-racing|sec_0-twohundredmiles;sz=512x64;
