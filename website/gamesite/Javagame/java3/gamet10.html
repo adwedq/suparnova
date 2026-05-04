@@ -29,7 +29,11 @@
             </applet>
 
     <script>
-      cheerpjInit();
+     await cheerpjInit({
+    javaProperties: ["java.library.path=/app/cheerpj-natives/natives"],
+  });
+  cheerpjCreateDisplay(800, 600);
+  window.lwjglCanvasElement = document.getElementById("lwjgl");
     </script>
   </body>
 </html>

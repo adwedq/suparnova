@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Bad Ice Cream</title>
+  <script src="../player/ruffle/ruffle.js"></script>
+  <link rel="stylesheet" href="../cwf.css">
+</head>
+<body>
+  <div id="game-container" class="gbox"></div>
+  <script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", () => {
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      const container = document.getElementById("game-container");
+      container.appendChild(player);
+      player.ruffle().load("../games/Bad-Ice-Cream.swf");
+    });
+  </script>  
+  <noscript>
+     <p> DTOX need javascript to run games, please enable JavaScript in your browser!</p>
+</noscript>
+</body>
+</html>
