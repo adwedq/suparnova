@@ -1,49 +1,119 @@
-
-   <!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SupArNova</title>
+    <title>SupArNova: One oF a kInD</title>
     <link rel="stylesheet" href="website/application.css">
 </head>
 <body>
 
-<div class="container">
-    <div class="sidebar">
-        <div class="header-top">SupArNova: one of a kind</div>
-        
-        <div class="logo-area">
-            <h2 style="color: #ccc;"><img src="website/assests/sn.svg" alt="Logo" style="width: 200px;"></h2>
-        </div>
-
-        <div class="nav-section dots-pattern">
-            <a href="index.html" class="nav-item">HOME</a>
-            <a href="website/workit.html" class="nav-item">FLASH</a>
-            <a href="website/workit.html" class="nav-item">SHOCKWAVE</a>
-            <a href="website/workit.html" class="nav-item">JAVA</a> 
-              <a href="website/test.html" class="nav-item">ALL GAME</a>
-        </div>
-
-        <div class="status-bar">par will be useful some day</div>  
-        <div class="stuff"> <p style="color: black;"> The first website on the internet where you can play: flash,shockwave and java games without plugins(this site uses ruffle,cheerpj and dirplayer)!</p></div>
-        <div class="status-bar"><p style="color: yellow;">end of stuff</p></div>
+    <div class="top-bar">
+       <h5 style="color: #37caff;">SPACE</h5>
     </div>
 
-    <div class="main-content">
-      <img src="website/assests/bar.svg" alt="bars"  style="width: 400px;">
-       <a href="website/gamesite/gamet5.html"> <div class="content-block"> <h1> Super Smash Flash</h1></div></a>
-        <div class="content-block"> <a href="website/gamesite/Javagame/java1/gamet8.html"><h1> 3D.Java heroes</h1></a></div>
-        <div class="content-block"> <a href="website/gamesite/gamet11.html"><h1> Bewejeled Twist </h1></a></div>
-        <div class="content-block"> <a href="website/gamesite/gamet6.html"><h1> JunkBot </h1></a></div> 
-         <div class="content-block"> <a href="website/gamesite/gamet16.html"><h1> Pandafang </h1></a></div>
-        <div class="content-block"> <a href="website/gamesite/gamet8.html"><h1> Fancy pants adenventures: world 1 </h1></a></div>
-  
-    </div>
-</div>
+    <header>
+        <div class="container">
+            <img src="website/assests/sn.svg" alt="suparnova logo" style=" width: 35%; backdrop-filter: blur(10px);">
+            <nav class="main-nav">
+                <a href="index.html" class="active">HOME</a>
+                <a href="website/workit.html">FLASH</a>
+                <a href="website/workit.html">SHOCKWAVE</a>
+                <a href="website/workit.html">JAVA</a>
+                <a href="website/workit.html">OTHER</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero-flex">
+            <div class="featured-box">
+                <div class="box-header">game of the millenium</div>
+                <div class="featured-content">
+                    <div class="featured-thumb"><img src="website/assests/gm-logo/FPAw1.avif" alt="Fancy pants adventures img" style="width: 65%; margin-left: 40px;"></div>
+                    <div class="featured-text">
+                        <h3>Fancy pants adventure:world 1</h3>
+                        <p>banger game, is like mario but actually good, world 2 doesnt work</p>
+                        <a href="website/gamesite/gamet8.html">I wanna play! »</a>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-box">
+                <div class="promo-inner">
+                    <img src="website/assests/isn.png" alt="the&copy;iSN" class="isn">
+                    <img src="website/assests/parroth.gif" alt="parry" class="parry"> <p style="color: black;">im useless now</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="three-column">
+            <div class="col">
+              
+                <div class="item-row">
+                    <div class="small-thumb"><img src="website/assests/gm-logo/junkbot-lg.png" alt="junkbot" style=" width: 80%;"></div>
+                    <div><a href="website/gamesite/gamet6.html"><strong>Junkbot</strong></a><br>you are a robot that its trash throught lego's factory</div>
+                </div>
+                <div class="item-row">
+                    <div class="small-thumb"><img src="website/assests/gm-logo/3djava.png" alt="3D.Java heroes" style=" width: 90%;"></div>
+                    <div><a href="website/gamesite/Javagame/java1/gamet8.html"><strong>3D.Java heroes</strong></a><br>3D game about you beating monsters</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item-row">
+                    <div class="small-thumb"><img src="website/assests/gm-logo/smashflash-logo.jpg" alt="smash flash" style=" width: 100%;"></div>
+                    <div><a href="website/gamesite/gamet5.html"><strong>Super Smash flash</strong></a><br>super smash bros. but in flash</div>
+                </div>
+                <div class="item-row">
+                    <div class="small-thumb"><img src="website/assests/gm-logo/dots-logo.png" alt="dots" style=" width: 80%;"></div>
+                    <div><a href="website/gamesite/gamet.html"><strong>!DOTS!</strong></a><br>collect dots</div>
+                </div>
+            </div>
+            <div class="col">
+                
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="bottom-flex">
+            <div class="categories">
+                <h3>other games</h3>
+                <div class="cat-grid">
+                   <details> <summary>all games</summary> 
+                 <ul>
+          <li><a href="website/gamesite/gamet-sh.html">bejeweled 2</a></li>
+          <li><a href="website/gamesite/gamet.html">!DOTS!</a></li>
+          <li><a href="website/gamesite/gamet11.html">Bejeweled Twist</a></li>
+          <li><a href="website/gamesite/gamet12.html">Bejeweled Blitz</a></li>
+          <li><a href="website/gamesite/gamet13.html">Bad Ice Cream</a></li>
+          <li><a href="website/gamesite/gamet14.html">sugar,sugar</a></li>
+          <li><a href="website/gamesite/gamet15.html">Suma the lost treasure</a></li>
+          <li><a href="website/gamesite/gamet16.html">pandafang</a></li>
+          <li><a href="website/gamesite/gamet2.html">Helicopter: flash version</a></li>
+          <li><a href="website/gamesite/gamet3.html">Portal: flash version</a></li>
+          <li><a href="website/gamesite/gamet4.html">The Impossible Quiz Deluxe</a></li>
+          <li><a href="website/gamesite/gamet5.html">Supersmash flash</a></li>
+          <li><a href="website/gamesite/gamet6.html">junkbot</a></li>
+          <li><a href="website/gamesite/gamet7.html">aquanaut</a></li>
+          <li><a href="website/gamesite/gamet8.html">fancy pants adventure</a></li>
+          <li><a href="website/gamesite/Javagame/java1/gamet8.html">3D.Javaヒーローズ</a></li>
+          <li><a href="website/gamesite/Javagame/java2/gamet9.html">Anyone 4 Tennis?</a></li>
+          <li><a href="website/gamesite/Javagame/java3/gamet10.html">miencraft</a></li>
+                 </ul>
+                </details>
+      </div>
+            </div>
+            <div class="news-section">
+              <img src="website/assests/10.gif" alt="under construction">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; SupArNova 2026. No rights reserved.
+        </div>
+    </footer>
 
 </body>
 </html>
-    </div>
-</div>
-
