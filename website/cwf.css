@@ -121,11 +121,11 @@ background-color: white;
 
 .gbox { 
     border: 5px solid crimson; 
-    margin: -20px auto 0 auto; 
+  margin-left: 330px; 
     align-items: center; 
     max-width: max-content; 
     max-height: fit-content; 
-    margin-top: 40px;
+    margin-top: 70px;
 }   
 
 .sida { 
