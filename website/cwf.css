@@ -1,9 +1,7 @@
 body { 
-    margin: 0; 
+    
    background-color:rgb(191, 191, 191);
-   font-family: arial ;
-   color: black; 
-   font-size: large; 
+  
    
 }
 .main {    
@@ -121,10 +119,9 @@ background-color: white;
 
 .gbox { 
     border: 5px solid crimson; 
-  margin-left: 330px; 
-    align-items: center; 
-    max-width: max-content; 
-    max-height: fit-content; 
+  margin-left: 28%; 
+   width: fit-content; 
+   height: fit-content;
     margin-top: 70px;
 }   
 
