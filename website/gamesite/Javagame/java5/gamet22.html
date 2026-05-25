@@ -1,21 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>3D.Javaヒーローズ - Vertigo</title>
-    <link rel="icon" type="image/x-icon" href="../../../assests/favicon.png">
-    <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
-  </head>
-  <body style="background-color: #222; display: flex; justify-content: center; padding-top: 80px;">
+    <head>
+        <meta charset="utf-8" />
+        <title>3D.Javaヒーローズ - Vertigo</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="../../../assests/favicon.png"
+        />
+        <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
+    </head>
+    <body
+        style="
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            padding-top: 80px;
+        "
+    >
+        <applet code="vertigo.class" width="512" height="384">
+            <param name="games" value="3" />
+        </applet>
 
-      <applet code="vertigo.class" width="512" height="384">
-          <param name="games" value="3">
-      </applet>
-
-    <script>
-      (async function() {
-        await cheerpjInit();
-      })();
-    </script>
-  </body>
+        <script>
+            (async function () {
+                await cheerpjInit();
+            })();
+        </script>
+    </body>
 </html>
